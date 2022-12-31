@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" type="text/css" href="sources/css/style.css"/>
+</head>
+<body>
+    <div class="header">
+        <h1 id="span">Жоски Калькулятор</h1>
+    </div>
+    
+    <div class="calc">
+        <div class="calc-screen">
+            <p class="calc-screen-number">0</p>
+        </div>
+        <div class="buttons">
+            <div class="btn ac bg-grey" ondblclick = "ClearAll()" >AC</div>
+            <div class="btn plus-minus bg-grey" onclick = "MinusPlus()">+/-</div>
+            <div class="btn percent bg-grey" onclick = "procent()">%</div>
+            <div class="btn division bg-orange" onclick = "Signs(this)">/</div>
+
+            <div class="btn seven" onclick = "AddNumber(this)">7</div>
+            <div class="btn eigth" onclick = "AddNumber(this)">8</div>
+            <div class="btn nine" onclick = "AddNumber(this)">9</div>
+            <div class="btn myltiply bg-orange" onclick = "Signs(this)">x</div>
+
+            <div class="btn four " onclick = "AddNumber(this)">4</div>
+            <div class="btn five " onclick = "AddNumber(this)">5</div>
+            <div class="btn six " onclick = "AddNumber(this)">6</div>
+            <div class="btn minus bg-orange" onclick = "Signs(this)">-</div>
+
+            <div class="btn one " onclick = "AddNumber(this)">1</div>
+            <div class="btn two " onclick = "AddNumber(this)">2</div>
+            <div class="btn three " onclick = "AddNumber(this)">3</div>
+            <div class="btn plus bg-orange" onclick = "Signs(this)">+</div>
+
+            <div class="btn zero " onclick = "AddNumber(this)">0</div>
+            <div class="btn dot " onclick = "">.</div>
+            <div class="btn equal bg-orange" onclick = "Meaning()">=</div>
+        </div>
+    </div>
+    <script src="sources/js/script.js"></script>
+    <script src="sources/js/jquery-3.3.1.min.js"></script>
+</body>
+</html>
